@@ -17,8 +17,8 @@ import { COMPTROLLER_INTERFACE } from './comptroller-interface';
 import { COMPOUND_LENS_INTERFACE } from './compoundLense-interface';
 import { ERC20_INERFACE } from './erc20-interface';
 
-//const CHAIN = 'mainnet';
-const CHAIN = 'ropsten';
+const CHAIN = 'mainnet';
+//const CHAIN = 'ropsten';
 
 const fetch = require('node-fetch');
 
@@ -31,8 +31,8 @@ const web3 = new Web3(
 );
 
 // TODO add logic to configure by network
-// import { config, marketsList, addressAPI } from './mainnetConfig';
-import { config, marketsList, addressAPI } from './ropstenConfig';
+import { config, marketsList, addressAPI } from './mainnetConfig';
+//import { config, marketsList, addressAPI } from './ropstenConfig';
 
 const CLIENT_DB_PATH = path.join(__dirname, '../../client_db');
 
